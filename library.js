@@ -86,9 +86,10 @@ const generateUid = function() {
 
 // adds a track to the library
 const addTrack = function(name, artist, album) {
-
+       const newID = generateUid()
+       let newTrack = {id: generateUid(), name: name, artist: artist, album: album}
+       library.tracks.t04 = newTrack;
 }
-
 
 // adds a playlist to the library
 const addPlaylist = function(name) {
